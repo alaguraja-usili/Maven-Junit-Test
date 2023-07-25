@@ -27,5 +27,5 @@ jobs:
       run: mvn clean install
 
     - name: STEP-5 - JUNIT Test with Maven
-      run: mvn test
+      run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
       
